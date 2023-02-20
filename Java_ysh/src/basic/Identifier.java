@@ -1,3 +1,4 @@
+package basic;
 
 public class Identifier {
 
@@ -8,6 +9,7 @@ public class Identifier {
 		// 식별자으 ㅣ이름은 중복하지 않는다. 대/소문자를 철저하게 구분합니다.
 		
 		int age = 35;
+		
 //		int age =40;
 		int Age = 40;
 		
@@ -29,7 +31,7 @@ public class Identifier {
 		//6. 한글이나 한자 같은 식별자 이름도 지정이 가능합니다. 하지만 사용 권장 x
 		
 		
-		
+		System.out.println("ㅇㅇㅇ");
 		
 		
 		
