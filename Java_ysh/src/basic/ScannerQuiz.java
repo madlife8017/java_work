@@ -11,19 +11,17 @@ public class ScannerQuiz {
 		System.out.print("이름 :");
 		String name = sc.nextLine();
 		
-		System.out.print("나이 :");
+		System.out.print("만 나이 :");
 		int age = sc.nextInt();
 		
+		System.out.println("======================");
 		System.out.printf("이름 : %s\n",name);
-		System.out.printf("나이 : %d세\n",age);
+		System.out.printf("나이 : 만 %d세\n",age);
 		
-		int year = 2023-age+1;
+		int year = 2023-age;
 				
 		System.out.println("출생연도 : " + year +"년");
+		System.out.printf("======================");
 		sc.close();
-		System.out.println("d");
-		
-		
-		
 	}
 }
