@@ -4,8 +4,8 @@ import java.util.Scanner;
 
 public class ArrayInsertQuiz {
 
-	public static void main(String[] args) {
-		/*
+   public static void main(String[] args) {
+      /*
         1. String 배열을 생성하세요. (foods)
         크기는 넉넉하게 50개로 지정하겠습니다.
 
@@ -22,36 +22,30 @@ public class ArrayInsertQuiz {
         '이미 존재하는 음식입니다.' 를 출력하고
         다시 새로운 음식을 입력받을 수 있도록 코드를 제어해 보세요.
 
-		 */
+       */
 
-		String [] food = new String[50];
-		Scanner sc = new Scanner(System.in);
-		int c=0;
-		out : for(int i=0;i<food.length;i++) {
-			
-			System.out.print("음식 이름을 입력해주세요 : ");
-			String input = sc.next();
-			
+      String [] food = new String[50];
+      Scanner sc = new Scanner(System.in);
 
-			for(int j =0;j<food.length;j++) {
-					if(input.equals(food[j])) {
-						System.out.println("이미 존재하는 음식입니다. 다시 입력해주세요");
-						i=i-1;
-						c++;
-						break;
-					} else if (c==0) {
-						if(input.equals("배불러")) break out;
-						else {food [i] = input;
-						break;}
-					}
-					
-			}
-		}
-		System.out.println("=============");
-		for(String n : food) {
-			if(n==null)break;
-			System.out.print(n + " ");
-		}
-		sc.close();
-	}
+      for(int i=0;i<food.length;i++) {
+         System.out.print("음식을 입력해주세요 : " );
+         String input = sc.next();
+         if(input.equals("배불러")) {
+            System.out.println("=================");
+            break;
+         } else {
+            for(int j=0;j<food.length;j++) {
+               if(input.equals(food[j])) {
+                  System.out.println("이미 존재하는 음식입니다.다시 입력하세요");
+                  i--;
+                  break;
+               } else if(j==food.length-1)food[i] = input;
+            }
+         }
+      }
+      for(String n : food) {
+         if(n==null) break;
+         System.out.print(n +" ");
+      }      
+   }
 }
