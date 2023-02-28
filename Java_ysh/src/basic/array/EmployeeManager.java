@@ -75,11 +75,10 @@ public class EmployeeManager {
 				if(count==0) {
 					System.out.println("등록된 사원 정보가 없습니다.");
 				} else {
-					for(int i=0; i<userNums.length;i++) {
+					for(int i=0; i<count;i++) {
 						if(userNums[i]==null) break;
-
-						System.out.printf("사번: %s / 이름 : %s / 나이 :%d / 부서 : %s"
-								,userNums[i],names[i],ages[i],deps[i]);
+						System.out.printf("#%d > 사번: %s / 이름 : %s / 나이 :%d / 부서 : %s"
+								,i+1,userNums[i],names[i],ages[i],deps[i]);
 						System.out.println();
 
 					}
@@ -140,7 +139,11 @@ public class EmployeeManager {
 								System.out.println("취소되었습니다.");
 								break outer;
 
+							}else {
+								System.out.println("잘못입력하셨습니다.");
+								break outer;
 							}
+							
 
 						} else if (i==99) {
 							System.out.println("조회하신 사원의 정보가 없습니다.");
@@ -154,8 +157,9 @@ public class EmployeeManager {
 				//y를 눌렀을 시에 삭제가 되도록 코드를 구성하세요.
 				//배열의 크기는 줄이지 않겠습니다. 삭제할 인덱스를 기준으로 뒤에 있는 값들을
 				//앞으로 한칸씩 땡기신 다음 count를 하나 내려주시면 됩니다.
-				System.out.print("사번을 입력해주세요 : ");
+				
 				outer : while(true) {
+					System.out.print("사번을 입력해주세요 : ");
 					String input = sc.next();
 					for(int i=0;i<100;i++) {
 						if(input.equals(userNums[i])) {
@@ -163,16 +167,27 @@ public class EmployeeManager {
 							String yn = sc.next();
 							if(yn.equals("Y")||yn.equals("y")) {
 								for(int j=i;j<100;j++) {
-									userNums[j]=userNums[j+1];
-									names [j]= names[j+1];
-									ages [j]= ages[j+1];
-									deps[j] = deps[j+1];
+									if(j==99) {
+										userNums[99]=null;
+										names [99]= null;
+										ages [99]= 0;
+										deps[99] = null;
+
+									}else {
+										userNums[j]=userNums[j+1];
+										names [j]= names[j+1];
+										ages [j]= ages[j+1];
+										deps[j] = deps[j+1];
+									}
 								}
 								System.out.println("사번 : "+input+"번 님의 정보가 삭제되었습니다.");
 								count--;
 								break outer;
 							}else if(yn.equals("N")||yn.equals("n")) {
 								break outer;
+							}else {
+								System.out.println("잘못입력하셨습니다.");
+								break;
 							}
 						}else if (i==99) {
 							System.out.println("조회하신 사원의 정보가 없습니다.");
