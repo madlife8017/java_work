@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
     <fullyQualifiedTypeName name="basic.ScannerExample"/>
-    <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="java.lang.invoke.ClassSpecializer.SpeciesData"/>
     <fullyQualifiedTypeName name="java.lang.Math"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="oop.basic.MemberLocalVariable"/>
+    <fullyQualifiedTypeName name="oop.furit.Banana"/>
+    <fullyQualifiedTypeName name="oop.furit.Melon"/>
+    <fullyQualifiedTypeName name="oop.juice.Apple"/>
+    <fullyQualifiedTypeName name="oop.furit.Apple"/>
     <fullyQualifiedTypeName name="java.util.Arrays"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
 </qualifiedTypeNameHistroy>
