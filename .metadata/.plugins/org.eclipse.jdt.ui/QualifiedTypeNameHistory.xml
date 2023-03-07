@@ -8,7 +8,14 @@
     <fullyQualifiedTypeName name="oop.furit.Melon"/>
     <fullyQualifiedTypeName name="oop.juice.Apple"/>
     <fullyQualifiedTypeName name="oop.furit.Apple"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="oop.modi.cls1.B"/>
+    <fullyQualifiedTypeName name="oop.modi.member.pac1.A"/>
+    <fullyQualifiedTypeName name="oop.modi.protec.pac1.A"/>
+    <fullyQualifiedTypeName name="oop.encap.bad.MyBrith"/>
+    <fullyQualifiedTypeName name="oop.encap.good.MyBirth"/>
     <fullyQualifiedTypeName name="java.util.Arrays"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
-    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="javax.swing.plaf.synth.SynthOptionPaneUI"/>
+    <fullyQualifiedTypeName name="oop.poly.basic.A"/>
 </qualifiedTypeNameHistroy>
