@@ -2,5 +2,6 @@
 <typeInfoHistroy>
     <typeInfo handle="=Java_ysh/src&lt;oop.poly.casting{Parent.java[Parent" modifiers="1" timestamp="1678171684747"/>
     <typeInfo handle="=Java_ysh/src&lt;oop.abs.pet{Pet.java[Pet" modifiers="1025" timestamp="1678261733708"/>
-    <typeInfo handle="=Java_ysh/src&lt;oop.abs.quiz{Shape.java[Shape" modifiers="1025" timestamp="1678263912645"/>
+    <typeInfo handle="=Java_ysh/src&lt;oop.abs.quiz{Shape.java[Shape" modifiers="1025" timestamp="1678323557193"/>
+    <typeInfo handle="=Java_ysh/src&lt;oop.inter.good{IUserService.java[IUserService" modifiers="513" timestamp="1678334207509"/>
 </typeInfoHistroy>

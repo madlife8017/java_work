@@ -20,6 +20,7 @@ public class StringMethod {
 		//substring(begin,end) 문자열을 범위 지정하여 추출
 		String ss1 = str.substring(1,5); //1번 이상 5번 미만
 		
+		
 		System.out.println(ss1);
 		
 		String ss2 = str.substring(6);//6번 부터 끝까지
