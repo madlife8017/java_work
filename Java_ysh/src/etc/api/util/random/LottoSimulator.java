@@ -145,7 +145,7 @@ public class LottoSimulator {
 		System.out.println("3등 당첨횟수 : "+prize3);
 		System.out.println("4등 당첨횟수 : "+prize4);
 		System.out.println("5등 당첨횟수 : "+prize5);
-		System.out.println("총 도전 횟수 : "+(prize5+prize4+prize3+prize2+prize1));
+		System.out.println("(꽝을제외한)총 도전 횟수 : "+(prize5+prize4+prize3+prize2+prize1));
 		System.out.println("1등 당첨까지 비용 : "+((prize5+prize4+prize3+prize2+prize1)*1000)+"원");		
 		System.out.println("==============================================");
 
